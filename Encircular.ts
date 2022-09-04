@@ -56,7 +56,7 @@ function doesCircleExist(commands: string[]): string[] {
     let results: string[] = []
     
     commands.forEach((command: string) => {
-        let x = 0, y = 0, direction: Direction = Direction.N, moveRobot = command
+        let x = 0, y = 0, direction = Direction.N, moveRobot = command
         
         if (command.length === 1 || allOneCommand.test(command)) moveRobot = command // eg, G or LLL
         
